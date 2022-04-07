@@ -9,6 +9,14 @@
         <Description>Templates to use when creating an application</Description>
         <PackageTags>dotnet-new;templates;</PackageTags>
 
+
+        <Copyright>Bunyamin Sakar</Copyright>
+        <PackageCopyright>Project Templates Bunyamin Sakar</PackageCopyright>
+        <PackageProjectUrl>https://github.com/bunyu93/Project-Templates</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/bunyu93/Project-Templates</RepositoryUrl>
+
         <TargetFramework>netstandard2.0</TargetFramework>
 
         <IncludeContentInPack>true</IncludeContentInPack>
@@ -23,9 +31,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="ApiSpaReactTemplate\.template.config\icon.png" />
-      <Content Include="ApiSpaReactTemplate\.template.config\ide.host.json" />
-      <Content Include="ApiSpaReactTemplate\.template.config\template.json" />
+        <Content Include="ApiSpaReactTemplate\.template.config\icon.png" />
+        <Content Include="ApiSpaReactTemplate\.template.config\ide.host.json" />
+        <Content Include="ApiSpaReactTemplate\.template.config\template.json" />
     </ItemGroup>
 
 </Project>
