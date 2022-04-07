@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.0.0</PackageVersion>
         <PackageId>Project.Templates.Bunyamin.Sakar</PackageId>
         <Title>Project Templates</Title>
         <Authors>Bunyamin Sakar</Authors>
@@ -11,7 +11,7 @@
 
 
         <Copyright>Bunyamin Sakar</Copyright>
-        <PackageCopyright>Project Templates Bunyamin Sakar</PackageCopyright>
+        <PackageCopyright>Copyright © Bunyamin Sakar. All rights Reserved</PackageCopyright>
         <PackageProjectUrl>https://github.com/bunyu93/Project-Templates</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryType>git</RepositoryType>
@@ -23,11 +23,12 @@
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <ContentTargetFolders>content</ContentTargetFolders>
         <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="templates\**\*" Exclude="templates\**\**\bin\**;templates\**\**\obj\**" />
-        <Compile Remove="**\**\*" />
+        <Content Include="ApiSpaReactTemplate\**\*" Exclude="ApiSpaReactTemplate\**\bin\**;ApiSpaReactTemplate\**\obj\**" />
+        <Compile Remove="**\*" />
     </ItemGroup>
 
     <ItemGroup>
@@ -35,5 +36,4 @@
         <Content Include="ApiSpaReactTemplate\.template.config\ide.host.json" />
         <Content Include="ApiSpaReactTemplate\.template.config\template.json" />
     </ItemGroup>
-
 </Project>
