@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
         <PackageId>Project.Templates.Bunyamin.Sakar</PackageId>
         <Title>Project Templates</Title>
         <Authors>Bunyamin Sakar</Authors>
@@ -35,5 +35,16 @@
         <Content Include="ApiSpaReactTemplate\.template.config\icon.png" />
         <Content Include="ApiSpaReactTemplate\.template.config\ide.host.json" />
         <Content Include="ApiSpaReactTemplate\.template.config\template.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="ApiSpaAngularTemplate\**\*" Exclude="ApiSpaAngularTemplate\**\bin\**;ApiSpaAngularTemplate\**\obj\**" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="ApiSpaAngularTemplate\.template.config\icon.png" />
+        <Content Include="ApiSpaAngularTemplate\.template.config\ide.host.json" />
+        <Content Include="ApiSpaAngularTemplate\.template.config\template.json" />
     </ItemGroup>
 </Project>
